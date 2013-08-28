@@ -14,6 +14,7 @@ namespace TestPOD.Core
         public OrderStatusBO(IOrderStatusRepository repository)
         {
             _repository = repository;
+            //test
         }
 
         public ItemStatus GetInitialItemStatus()
