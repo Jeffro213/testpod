@@ -14,6 +14,7 @@ namespace TestPOD.Core
         public OrderStatusBLO(IOrderStatusRepository repository)
         {
             _repository = repository;
+            //test comment added
         }
 
         public ItemStatus GetInitialItemStatus()
