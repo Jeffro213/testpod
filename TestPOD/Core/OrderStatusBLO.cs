@@ -13,8 +13,10 @@ namespace TestPOD.Core
 
         public OrderStatusBLO(IOrderStatusRepository repository)
         {
+            int x = 2;
+            x = 3;
             _repository = repository;
-            //test comment added
+            //test comment added....changed
         }
 
         public ItemStatus GetInitialItemStatus()
