@@ -23,7 +23,7 @@ namespace TestPOD.Tests
                 Description = "New"
             });
 
-            OrderStatusBO bo = new OrderStatusBO(mock.Object);
+            OrderStatusBLO bo = new OrderStatusBLO(mock.Object);
             ItemStatus status = bo.GetInitialItemStatus();
             Assert.IsNotNull(status);
         }
@@ -67,7 +67,7 @@ namespace TestPOD.Tests
             mock.Setup(s => s.GetAvailableItemStatuses(CurrentItemStatus, CurrentOrderStatus, Item)).Returns(statuses);
 
 
-            OrderStatusBO bo = new OrderStatusBO(mock.Object);
+            OrderStatusBLO bo = new OrderStatusBLO(mock.Object);
             List<ItemStatus> retVal = bo.GetAvailableItemStatus(CurrentItemStatus, CurrentOrderStatus, Item);
             Assert.IsTrue(retVal.Count > 0);
             Assert.IsTrue(retVal.FindAll(s => s.Code == "IZP").Count > 0);

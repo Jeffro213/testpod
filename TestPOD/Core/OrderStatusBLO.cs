@@ -7,14 +7,13 @@ using TestPOD.Repositories;
 
 namespace TestPOD.Core
 {
-    public class OrderStatusBO
+    public class OrderStatusBLO
     {
         IOrderStatusRepository _repository;
 
-        public OrderStatusBO(IOrderStatusRepository repository)
+        public OrderStatusBLO(IOrderStatusRepository repository)
         {
             _repository = repository;
-            //test
         }
 
         public ItemStatus GetInitialItemStatus()
