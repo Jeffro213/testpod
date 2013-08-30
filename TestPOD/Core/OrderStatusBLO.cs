@@ -17,8 +17,10 @@ namespace TestPOD.Core
             x = 4;
             _repository = repository;
             //test comment added....changedddd
-            x = 3;
-            ss ss ss
+            x = 35;
+
+
+
         }
 
         public ItemStatus GetInitialItemStatus()
